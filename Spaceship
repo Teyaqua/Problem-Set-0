@@ -1,0 +1,14 @@
+when green flag clicked
+forever
+    if <key [right arrow v] pressed?> then
+        change x by (Speed)
+        change [Fuel v] by -1
+    end
+    if <key [left arrow v] pressed?> then
+        change x by (-Speed)
+        change [Fuel v] by -1
+    end
+    if <[Fuel v] < 1> then
+        stop [all v]
+    end
+end
