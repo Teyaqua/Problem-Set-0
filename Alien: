@@ -1,0 +1,12 @@
+when green flag clicked
+forever
+    Move Alien (5)
+end
+
+define Move Alien (Speed)
+    change x by (pick random (-Speed) to Speed)
+    change y by (pick random (-Speed) to Speed)
+    if <touching [Spaceship v]?> then
+        change [Fuel v] by -5
+    end
+end
