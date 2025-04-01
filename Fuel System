@@ -1,0 +1,6 @@
+when green flag clicked
+set [Fuel v] to 100
+forever
+    wait (1) seconds
+    change [Fuel v] by -1
+end
